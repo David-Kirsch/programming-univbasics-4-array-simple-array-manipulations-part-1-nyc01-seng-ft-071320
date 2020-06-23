@@ -13,9 +13,5 @@ def using_pop(array)
 end
 
 def pop_with_args(array, remove)
-  removed_elements = []
-  remove.times do
-    removed_elements.unshift(array.pop)
-  end
-  removed_elements
+  array.pop(remove)
 end
