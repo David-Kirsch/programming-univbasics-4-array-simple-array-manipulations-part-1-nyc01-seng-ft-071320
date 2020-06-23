@@ -16,7 +16,7 @@ def pop_with_args(array, remove)
   removed_elements = []
   remove.times do
     removed_elements.push(array.pop)
-    binding.pry
   end
+  binding.pry
   removed_elements
 end
