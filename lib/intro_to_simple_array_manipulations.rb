@@ -11,7 +11,9 @@ def using_pop(array)
 end
 
 def pop_with_args(array, remove)
+  removed_elements = []
   remove.times do
-    array.pop
+    removed_elements.push(array.pop)
   end
+  removed_elements
 end
