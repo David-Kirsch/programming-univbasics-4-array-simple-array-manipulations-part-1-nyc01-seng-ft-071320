@@ -1,3 +1,5 @@
+require 'pry'
+
 def using_push(array, string)
   array.push string
 end
@@ -14,6 +16,7 @@ def pop_with_args(array, remove)
   removed_elements = []
   remove.times do
     removed_elements.push(array.pop)
+    binding.pry
   end
   removed_elements
 end
